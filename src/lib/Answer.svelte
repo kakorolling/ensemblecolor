@@ -1,9 +1,15 @@
 <script>
+    import { onMount } from "svelte";
+
     import result0 from "../static/result0.jpg";
     import result1 from "../static/result1.jpg";
     import result2 from "../static/result2.jpg";
     import result3 from "../static/result3.jpg";
     import { score, gameSequence, colorDic, randKeys } from "../store";
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 </script>
 
 <main>

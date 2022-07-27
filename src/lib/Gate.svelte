@@ -1,6 +1,11 @@
 <script>
+    import { onMount } from "svelte";
     import indexBg from "../static/indexBg.jpg";
     import { gameSequence } from "../store";
+
+    onMount(() => {
+        window.scrollTo(0, 0);
+    });
 </script>
 
 <main>

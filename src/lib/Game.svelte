@@ -24,6 +24,7 @@
     var min = 0;
     var sec = 0;
     onMount(() => {
+        window.scrollTo(0, 0);
         const counter = setInterval(() => {
             if (count == 0) {
                 clearInterval(counter);
