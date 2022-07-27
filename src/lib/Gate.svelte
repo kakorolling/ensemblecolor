@@ -10,7 +10,7 @@
         <div class="text">
             답은 이름만, 갤별명 인정 안함<br />
             (ex. 스바루, 호쿠토, 마코토, 마오)<br />
-            타이머 4분
+            타이머 100초
         </div>
         <button
             id="start"
@@ -25,7 +25,7 @@
     .title {
         margin: auto;
         margin-top: 30px;
-        width: 500px;
+        width: 60%;
         text-align: center;
         font-size: 20pt;
         font-weight: 600;

@@ -28,16 +28,16 @@
 
 <style>
     img {
-        position: absolute;
+        margin: auto;
+        margin-top: 30px;
         top: 50px;
-        left: calc(50% - 400px);
+        width: 60%;
         display: block;
         z-index: -1;
-        opacity: 0.4;
     }
     #resultText {
         margin: auto;
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 40pt;
         font-weight: 600;
         width: 500px;
