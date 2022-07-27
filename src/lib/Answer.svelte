@@ -40,7 +40,7 @@
         margin-top: 50px;
         font-size: 40pt;
         font-weight: 600;
-        width: 500px;
+        width: 80%;
         border: 2px solid #000;
         border-radius: 10px;
         text-align: center;
