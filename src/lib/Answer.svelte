@@ -3,7 +3,7 @@
     import result1 from "../static/result1.jpg";
     import result2 from "../static/result2.jpg";
     import result3 from "../static/result3.jpg";
-    import { score, gameSequence } from "../store";
+    import { score, gameSequence, colorDic, randKeys } from "../store";
 </script>
 
 <main>
@@ -24,6 +24,12 @@
             $gameSequence = 1;
         }}>다시하기</button
     >
+
+    <div id="answerText">정답</div>
+    {#each $randKeys as key, i}
+        <div class="color" style="background-color: {key};" />
+        <div class="colorText">{$colorDic[key]}</div>
+    {/each}
 </main>
 
 <style>
@@ -53,6 +59,11 @@
         font-size: 100pt;
         font-weight: 600;
     }
+
+    #answerText {
+        text-align: center;
+        font-size: 30pt;
+    }
     .btn {
         margin: auto;
         margin-top: 50px;
@@ -72,5 +83,20 @@
 
     .btn:active {
         background-color: #bbb;
+    }
+
+    .color {
+        margin: auto;
+        margin-top: 80px;
+        width: 100px;
+        height: 100px;
+        border: 3px solid #000;
+        border-radius: 50%;
+    }
+
+    .colorText {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20pt;
     }
 </style>

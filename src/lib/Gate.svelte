@@ -8,7 +8,7 @@
         <div class="title">앙캐 이미지컬러 맞추기</div>
         <img class="idxBg" src={indexBg} alt="img" />
         <div class="text">
-            답은 이름만, 갤별명 인정 안함<br />
+            답:이름 or 성+이름(띄어쓰기 상관x), 갤별명 인정 안함<br />
             (ex. 스바루, 호쿠토, 마코토, 마오)<br />
             타이머 100초
         </div>
