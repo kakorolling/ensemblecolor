@@ -1,16 +1,20 @@
 <script>
+    import result0 from "../static/result0.jpg";
+    import result1 from "../static/result1.jpg";
+    import result2 from "../static/result2.jpg";
+    import result3 from "../static/result3.jpg";
     import { score, gameSequence } from "../store";
 </script>
 
 <main>
     {#if $score == 0}
-        <img src="./src/static/result0.jpg" alt="img" />
+        <img src={result0} alt="img" />
     {:else if $score > 0 && $score <= 4}
-        <img src="./src/static/result1.jpg" alt="img" />
+        <img src={result1} alt="img" />
     {:else if $score > 4 && $score <= 9}
-        <img src="./src/static/result2.jpg" alt="img" />
+        <img src={result2} alt="img" />
     {:else}
-        <img src="./src/static/result3.jpg" alt="img" />
+        <img src={result3} alt="img" />
     {/if}
     <div id="resultText">당신의 점수는</div>
     <div id="result">{$score}/10</div>

@@ -1,11 +1,12 @@
 <script>
+    import indexBg from "../static/indexBg.jpg";
     import { gameSequence } from "../store";
 </script>
 
 <main>
     <div class="container">
         <div class="title">앙캐 이미지컬러 맞추기</div>
-        <img class="idxBg" src="./src/static/indexBg.jpg" alt="img" />
+        <img class="idxBg" src={indexBg} alt="img" />
         <div class="text">
             답은 이름만, 갤별명 인정 안함<br />
             (ex. 스바루, 호쿠토, 마코토, 마오)<br />
