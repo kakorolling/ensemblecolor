@@ -4,13 +4,13 @@
 
 <main>
     {#if $score == 0}
-        <img src="./src/assets/result0.jpg" alt="img" />
+        <img src="./src/static/result0.jpg" alt="img" />
     {:else if $score > 0 && $score <= 4}
-        <img src="./src/assets/result1.jpg" alt="img" />
+        <img src="./src/static/result1.jpg" alt="img" />
     {:else if $score > 4 && $score <= 9}
-        <img src="./src/assets/result2.jpg" alt="img" />
+        <img src="./src/static/result2.jpg" alt="img" />
     {:else}
-        <img src="./src/assets/result3.jpg" alt="img" />
+        <img src="./src/static/result3.jpg" alt="img" />
     {/if}
     <div id="resultText">당신의 점수는</div>
     <div id="result">{$score}/10</div>
